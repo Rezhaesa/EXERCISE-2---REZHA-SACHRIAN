@@ -20,6 +20,7 @@ describe("CREATE BOOKING", function(){
         },
         additionalneeds : "testing"});
 
+        expect(response.status).to.equal(200);
         expect(response.body).to.have.property('bookingid');
         expect(response.body).to.have.property('booking');
         
@@ -35,6 +36,7 @@ describe("GET BOOKING", function(){
         .set('accept', 'application/json')
         .send({});
 
+        expect(response.status).to.equal(200);
         expect(response.body).to.have.property('firstname');
         expect(response.body).to.have.property('lastname');
         expect(response.body).to.have.property('totalprice');
@@ -53,7 +55,7 @@ describe("GET BOOKING IDs", function(){
         .send({firstname : "Rezha",
         lastname : "Sachrian"});
 
-        expect(response.text).to.deep.property([{bookingid}]);
+        expect(response.status).to.equal(200);
 
         })
 })
