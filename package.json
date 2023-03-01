@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  },
+  "name": "testapi",
+  "version": "1.0.0",
+  "description": "Mocha Chai TestAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "mocha"
+  ],
+  "author": "rezhasachrian",
+  "license": "ISC"
+}
