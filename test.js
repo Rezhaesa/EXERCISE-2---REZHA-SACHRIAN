@@ -24,8 +24,7 @@ describe("CREATE BOOKING", function(){
         expect(response.status).to.equal(200);
         expect(response.body).to.have.property('booking');
         expect(response.body).to.have.property('bookingid');
-        
-        
+
     })
 })
 
